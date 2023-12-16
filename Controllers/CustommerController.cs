@@ -1,4 +1,4 @@
-﻿using AutoMapper;
+﻿/*using AutoMapper;
 using EfCoreRelation.Data;
 using EfCoreRelation.DTOs;
 using EfCoreRelation.Entity;
@@ -38,7 +38,7 @@ namespace EfCoreRelation.Controllers
 
 
             //Map custommet obj
-            /*     private Customer MapCustomerObj(CustomerDto tempCustomerDto)
+            *//*     private Customer MapCustomerObj(CustomerDto tempCustomerDto)
                  {
                      var result = new Customer();
                      result.FirstName = tempCustomerDto.FirstName;
@@ -53,7 +53,7 @@ namespace EfCoreRelation.Controllers
                          result.customerAddresses.Add(newAdderss);
                      });
                      return result;
-                 }*/
+                 }*//*
 
 
             [HttpPost]
@@ -63,7 +63,7 @@ namespace EfCoreRelation.Controllers
             var newCustomer = mapper.Map<Customer>(tempCustommer);
             appDBContext.Customers.Add(newCustomer);
             await appDBContext.SaveChangesAsync();
-            /*  return Created($"/customer/${newCustomer.Id}", newCustomer);*/
+            *//*  return Created($"/customer/${newCustomer.Id}", newCustomer);*//*
             return Ok(newCustomer);
         }
 
@@ -127,3 +127,4 @@ namespace EfCoreRelation.Controllers
 
     }
 }
+*/

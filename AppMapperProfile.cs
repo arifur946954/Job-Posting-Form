@@ -1,6 +1,14 @@
 ﻿using AutoMapper;
 using EfCoreRelation.DTOs;
+using EfCoreRelation.DTOs.AccademicQualification;
+using EfCoreRelation.DTOs.Address;
+using EfCoreRelation.DTOs.Employee;
+using EfCoreRelation.DTOs.WorkExprenceDetails;
 using EfCoreRelation.Entity;
+using EfCoreRelation.Entity.AccademicQualificationDetails;
+using EfCoreRelation.Entity.Address;
+using EfCoreRelation.Entity.Employees;
+using EfCoreRelation.Entity.WorkExpreanceDetails;
 
 namespace EfCoreRelation
 {//inherit profile thats using automapper
@@ -9,10 +17,26 @@ namespace EfCoreRelation
         public AppMapperProfile()
 
         {//here is destination and destination
-            CreateMap<CustomerDto, Customer>();
-            CreateMap<CustomerAddressDTO, CustomerAddress>();
+         
+            CreateMap<EmployeesDto,Employee >();
+            CreateMap<EmployeeAddressDto, EmployeeAddress>();
             CreateMap<PresentAddressDto, PresentAddress>();
-            CreateMap<ParmanentAddressDto, PermanentAddress>();
+            CreateMap<ParmanentAddressDto, ParmanentAddress>();
+            //Accademic qualification
+            CreateMap<AccadeMicQulificationDto, AccademicQualification>();
+            CreateMap<AccQualifOneDto, AcQualifOne>();
+            CreateMap<AccQualifTwoDto, AcQualifTwo>();
+            CreateMap<AccQualifThreeDto, AcQualifThree>();
+            //Work Experience 
+            CreateMap<WorkExperienceDto, WorkExperience>();
+            CreateMap<ExpreienceOneDto, ExperienceOne>();
+            CreateMap<ExpreienceTwoDto, ExperienceTwo>();
+            CreateMap<ExpreienceThreeDto, ExperienceThree>();
+            CreateMap<ExpreienceFourDto, ExperienceFour>();
+            CreateMap<ExpreienceFiveDto, ExperienceFive>();
+
+
+
 
         }
     }

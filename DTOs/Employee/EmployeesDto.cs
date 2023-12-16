@@ -1,4 +1,7 @@
-﻿using EfCoreRelation.Entity.AccademicQualificationDetails;
+﻿using EfCoreRelation.DTOs.AccademicQualification;
+using EfCoreRelation.DTOs.Address;
+using EfCoreRelation.DTOs.WorkExprenceDetails;
+using EfCoreRelation.Entity.AccademicQualificationDetails;
 using EfCoreRelation.Entity.Address;
 using EfCoreRelation.Entity.WorkExpreanceDetails;
 
@@ -22,7 +25,7 @@ namespace EfCoreRelation.DTOs.Employee
 
         public string MaritalStatus { get; set; }
         public string Email { get; set; }
-        public List<EmployeeAddress> employeeAddresses { get; set; }
+        public List<EmployeeAddressDto> employeeAddresses { get; set; }
 
 
         public DateTime InterviewDare { get; set; }
@@ -32,7 +35,7 @@ namespace EfCoreRelation.DTOs.Employee
 
 
         public string AppliedBy { get; set; }
-        public List<AccademicQualification> accademicQualifications { get; set; }
-        public List<WorkExperience> workExperiences { get; set; }
+        public List<AccadeMicQulificationDto> accademicQualifications { get; set; }
+        public List<WorkExperienceDto> workExperiences { get; set; }
     }
 }

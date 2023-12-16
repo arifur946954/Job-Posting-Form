@@ -7,8 +7,8 @@ namespace EfCoreRelation.DTOs.AccademicQualification
         public int Id { get; set; }
         public int EmployeeId { get; set; }
        
-        public List<AcQualifOne> acQualifOnes { get; set; }
-        public List<AcQualifTwo> acQualifTwos { get; set; }
-        public List<AcQualifThree> acQualifThrees { get; set; }
+        public List<AccQualifOneDto> acQualifOnes { get; set; }
+        public List<AccQualifTwoDto> acQualifTwos { get; set; }
+        public List<AccQualifThreeDto> acQualifThrees { get; set; }
     }
 }
